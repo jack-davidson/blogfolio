@@ -1,3 +1,5 @@
-html {
-    font-size: 32px;
+body {
+	background-color: #eceff4;
+	font-family: 'Roboto', serif;
+	margin: 0;
 }

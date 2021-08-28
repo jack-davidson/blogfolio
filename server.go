@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"time"
 
 	"html/template"
 
@@ -15,7 +16,9 @@ type RootContext struct {
 
 func main() {
 	app := fiber.New()
-	app.Static("/static/", "./public")
+	app.Static("/", "./public", fiber.Static{
+		CacheDuration: 1 * time.Microsecond,
+	})
 
 	/* Main Page */
 	app.Get("/", func(c *fiber.Ctx) error {
@@ -26,7 +29,7 @@ func main() {
 		}
 		c.Context().SetContentType("text/html")
 		tmpl.Execute(c, RootContext{
-			Title: "jackdavidson",
+			Title: "jackdavidson.tech",
 		})
 
 		return nil
