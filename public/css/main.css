@@ -21,7 +21,7 @@ body {
 @media (max-width: 800px) {
 	.skewed {
 		top: 5%;
-		transform: skewY(30deg);
+/*		transform: skewY(30deg); */
 		height: 45%;
 	}
 }
