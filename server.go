@@ -10,6 +10,11 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+const (
+	Host = "0.0.0.0"
+	Port = 3000
+)
+
 type IndexContext struct {
 	Title string
 	Name  string
@@ -37,10 +42,10 @@ func main() {
 		return nil
 	})
 
-	/* Get Blog By Title */
-	app.Get("/blogs/:title", func(c *fiber.Ctx) error {
+	app.Get("/git/:repo", func(c *fiber.Ctx) error {
+		c.Redirect(fmt.Sprintf("https://github.com/jack-davidson/%s", c.Params("repo")))
 		return nil
 	})
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(fmt.Sprintf("%s:%d", Host, Port)))
 }

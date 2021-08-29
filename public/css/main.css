@@ -14,15 +14,8 @@ body {
 	height: 50%;
 	background: #2c3e50;
 	z-index: -1;
-	transform: skewY(15deg);
+/*	transform: skewY(15deg); */
 	transform-origin: bottom right top left;
-}
-
-.about {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 25px;
 }
 
 @media (max-width: 800px) {
