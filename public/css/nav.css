@@ -1,5 +1,5 @@
 nav {
-	font-size: 1.8rem;
+	font-size: 1.3rem;
 }
 
 nav ul {
@@ -7,7 +7,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #2e3440;
+	background-color: white;
 }
 
 nav li {
@@ -19,9 +19,26 @@ nav .title {
 }
 
 nav li a {
+	color: black;
 	display: block;
-	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+@media (max-width: 550px) {
+	ul {
+		display: grid;
+	}
+	nav li {
+		display: none;
+		float: none;
+	}
+	ul button {
+		display: block;
+	}
+	nav .title {
+		display: inline-block;
+		width: 100%;
+	}
 }

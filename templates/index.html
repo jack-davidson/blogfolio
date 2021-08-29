@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/intro.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script src="/script/nav.js"></script>
 
 		<title>{{.Title}}</title>
 	</head>
+	<div class="bg"></div>
 	<nav>
 		<ul>
 			<li class="title"><a href="">{{.Title}}</a></li>
 			<li><a href="">Contact</a></li>
 			<li><a href="">About</a></li>
 			<li><a href="">Blog</a></li>
+
 		</ul>
 	</nav>
 	<body>
+		<div class="bg-image">
+		<div class="intro">
+			<img class="intro-item intro-face" src="/img/face.png"></img>
+			<div class="intro-item intro-card card">
+				<div class="card-body">
+					<h5 class="card-title">{{.Name}}</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">More</a>
+				</div>
+			</div>
+		</div>
+		</div>
 	</body>
 </html>

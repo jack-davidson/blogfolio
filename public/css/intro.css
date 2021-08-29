@@ -1,0 +1,31 @@
+.intro {
+	display: flex;
+	padding: 3%;
+	justify-content: center;
+	gap: 1%;
+}
+
+.intro-face {
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+}
+
+.intro-card {
+	width: 25%;
+}
+
+@media (max-width: 640px) {
+	.intro {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-auto-flow: row;
+	}
+	.intro-card {
+		width: 100%;
+	}
+	.intro-item {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

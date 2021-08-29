@@ -10,8 +10,9 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-type RootContext struct {
+type IndexContext struct {
 	Title string
+	Name  string
 }
 
 func main() {
@@ -28,8 +29,9 @@ func main() {
 			log.Fatal(err)
 		}
 		c.Context().SetContentType("text/html")
-		tmpl.Execute(c, RootContext{
+		tmpl.Execute(c, IndexContext{
 			Title: "jackdavidson.tech",
+			Name:  "Jack Davidson",
 		})
 
 		return nil
