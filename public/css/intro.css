@@ -2,10 +2,13 @@
 	display: flex;
 	padding: 3%;
 	justify-content: center;
-	gap: 1%;
+        margin-bottom: 40px;
+	gap: 4%;
 }
 
 .intro-face {
+	width: 200px;
+	height: 200px;
 	border-radius: 125px;
 	-webkit-border-radius: 125px;
 	-moz-border-radius: 125px;

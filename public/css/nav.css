@@ -1,5 +1,5 @@
 nav {
-	font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 nav ul {
@@ -26,19 +26,20 @@ nav li a {
 	text-decoration: none;
 }
 
-@media (max-width: 550px) {
-	ul {
-		display: grid;
-	}
-	nav li {
-		display: none;
-		float: none;
-	}
-	ul button {
-		display: block;
-	}
-	nav .title {
-		display: inline-block;
-		width: 100%;
-	}
+@media screen and (max-width: 460px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    nav li {
+        display: none;
+        float: none;
+    }
+    ul button {
+        display: block;
+    }
+    nav .title {
+        display: inline-block;
+        width: 100%;
+    }
 }
