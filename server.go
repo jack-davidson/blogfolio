@@ -17,9 +17,6 @@ const (
 
 const (
 	Intro = "Hello! I'm Jack Davidson, a student Software Engineer in Austin, Texas. I like playing around with gnu/linux machines and programming in Go."
-	About = `
-<p></p>
-	`
 )
 
 type SiteContext struct {
@@ -31,7 +28,6 @@ type SiteContext struct {
 
 type SiteContent struct {
 	Intro template.HTML /* Short introduction. */
-	About template.HTML /* Multi-paragraph about section. */
 }
 
 func main() {
@@ -54,7 +50,6 @@ func main() {
 			Email: "jackmaverickdavidson@gmail.com",
 			Content: SiteContent{
 				Intro: template.HTML(Intro),
-				About: template.HTML(About),
 			},
 		})
 
