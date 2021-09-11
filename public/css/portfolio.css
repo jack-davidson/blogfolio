@@ -1,5 +1,5 @@
 .portfolio {
-    width: 80%;
+    width: 95%;
     margin-top: 10%;
     margin-bottom: 5%;
     margin-left: auto;
@@ -11,7 +11,7 @@
 }
 
 .portfolio .card {
-    width: 95%;
+    width: 98%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .portfolio {
         grid-template-columns: 1fr;
         width: 100%;
