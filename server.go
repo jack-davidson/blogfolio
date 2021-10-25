@@ -36,7 +36,6 @@ func main() {
 		CacheDuration: 1 * time.Microsecond,
 	})
 
-	/* Main Page */
 	app.Get("/", func(c *fiber.Ctx) error {
 		fmt.Println(c)
 		tmpl, err := template.ParseFiles("templates/index.html")
